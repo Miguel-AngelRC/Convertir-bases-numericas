@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*ocupar toda la pantalla*/
+#contenedor{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*aspectos generales: bordes y color de fondo de calculadora*/
+#calculadora { 
+    height: 98% ;
+    width: 50vh ;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+    background-color: #ffffff; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.466),-1px -4px 4px rgba(0, 0, 0, 0.466) ;
+    border-radius: 2px;
+    padding: 0px 20px;
+    
+}
+
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla { 
+    width: 70%; 
+    height: 8%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.466);
+    border-radius: 2px;
+    text-align: right;
+    position: absolute; 
+    left: 50%;  
+    top: 2%;
+    transform: translateX(-50%);
+    padding: 5px 5px;
+    background-color: #ffffff; 
+    font-family: "courier new";
+    overflow: auto;/* corta los elementos que salgan de su contenerdor o puede ser hidden y scroll*/
+    font-size: 4vh;
+    padding: 3% 0px;
+    border: solid .5px;
+}
+#textoConvertido { 
+    width: 70%; 
+    height: 7%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.466);
+    border-radius: 2px;
+    text-align: right;
+    position: absolute; 
+    left: 50%;  
+    top: 12%;
+    transform: translateX(-50%);
+    padding: 2px 2px;
+    background-color: #ffffff; 
+    font-family: "courier new";
+    font-size: 3vh;
+    padding: 3% 0px;
+    border: solid .5px;
+    overflow: auto;
+}
+
+#contenedorBotones{
+    position: relative;
+    top: 20%;
+    margin: 0px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*botones normales: anchura y margen*/
+#calculadora input{
+    width: 20%;
+    height: 10vh;
+    font-size: 3vh;
+    border-radius: 3px;
+    border: 0.5px solid rgb(255, 255, 255) ;
+    background-color: #81818180;
+    color: white;
+}
+
+
+.btn{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+} 
+
+#espacio_btn{
+    margin-bottom: 1%;
+}
+
+#tipoRes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+#tipoRes input{
+    width: 100px;
+    height: 5vh;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+.largo{
+    position: relative;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgb(240, 108, 0);
+}
+
